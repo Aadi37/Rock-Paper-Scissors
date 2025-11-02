@@ -4,7 +4,7 @@ const buttons = Array.from(document.querySelectorAll('.btn-choose'));
 const userSelect = document.querySelector('.userSelect');
 const compuerSelect = document.querySelector('.compuerSelect');
 const selectedImage = document.querySelector('.selectedImage');
-const resultBox = document.querySelector('.result'); // ✅ add this div in HTML
+const resultBox = document.querySelector('.result'); // ✅ make sure exists in HTML
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
@@ -17,19 +17,11 @@ buttons.forEach(button => {
     const computerBtn = buttons.find(b => Number(b.dataset.role) === randomNumber);
     const computerImg = computerBtn.querySelector('img').getAttribute('src');
 
-    // Clear old computer content
-    compuerSelect.innerHTML = `<h3></h3>`;
-
-    // Append computer image
-    const img = document.createElement('img');
-    img.src = computerImg;
-    img.alt = 'Computer Choice';
-    img.classList.add('computerImage');
-    compuerSelect.appendChild(img);
+    // ✅ Replace old computer image completely
+    compuerSelect.innerHTML = `<img src="${computerImg}" alt="Computer Choice" class="computerImage">`;
 
     // --- Determine Winner ---
     let resultText = '';
-
     if (role === randomNumber) {
       resultText = "😐 It's a Draw!";
     } else if (
@@ -42,10 +34,11 @@ buttons.forEach(button => {
       resultText = "😞 You Lose!";
     }
 
-    // Show result
+    // --- Show Result ---
     resultBox.textContent = resultText;
 
-    // Generate new random number for next round
+    // --- New Random Number for Next Round ---
     randomNumber = Math.floor(Math.random() * 3) + 1;
   });
 });
+
