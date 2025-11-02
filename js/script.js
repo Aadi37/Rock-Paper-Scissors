@@ -18,7 +18,7 @@ buttons.forEach(button => {
     const computerImg = computerBtn.querySelector('img').getAttribute('src');
 
     // Clear old computer content
-    // compuerSelect.innerHTML = `<h3>Computer Selected:</h3>`;
+    compuerSelect.innerHTML = `<h3></h3>`;
 
     // Append computer image
     const img = document.createElement('img');
