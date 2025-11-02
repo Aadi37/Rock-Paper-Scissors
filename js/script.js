@@ -18,7 +18,7 @@ buttons.forEach(button => {
     const computerImg = computerBtn.querySelector('img').getAttribute('src');
 
     // ✅ Replace old computer image completely
-    compuerSelect.innerHTML += `<img src="${computerImg}" alt="Computer Choice" class="computerImage">`;
+compuerSelect.innerHTML = `<img src="${computerImg}" alt="Computer Choice" class="computerImage">`;
 
     // --- Determine Winner ---
     let resultText = '';
