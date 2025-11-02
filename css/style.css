@@ -107,3 +107,9 @@ button.btn-choose {
     font-size: 25px;
     color: #fff;
 }
+.compuerSelect img {
+  display: block;
+  width: 120px;
+  height: auto;
+  margin: 0 auto;
+}
