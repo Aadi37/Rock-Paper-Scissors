@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title> Rock, Paper, Scissors</title>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+ <div class="fullPage">
+  <div class="mainPage">
+    <header>
+      <div class="LogoWrapper text-center">
+        <img src="images/logo-225.png" class="img-responsive" height="200px"/>
+      </div>
+    </header>
+    <div class="GameBoardUI">
+          <div class="PlayerWrapper">
+             <div class="PlayerScoreCard">
+                <h4> PLayer one - <span class="playerscore">0 </span></h4>
+             </div>
+             <div class="ComouterWrapper">
+               <h4> Computer - <span class="playerscore"> 0</span></h4>
+          </div>
+          </div>
+          <div class="MoveChoose">
+            <h4>Choose your move, rock paper or scissors?</h4>
+            <ul class="BtnGroup">
+              <li>
+                <button id="buttonRock" data-role="1" class="btn-choose"> <img src="images/fist.svg"/></button>
+              </li>
+              <li>
+                <button id="buttonPaper" data-role="2" class="btn-choose"> <img src="images/five.svg"/></button>
+              </li>
+              <li>
+                <button id="buttonScissors" data-role="3" class="btn-choose"> <img src="images/two.svg"/></button>
+              </li>
+            </ul>
+          </div>
+          <div class="GameResult">
+            <div class="userSelect">
+              <img class="selectedImage" src="" />
+            </div>
+             <div class="result"></div>
+            <div class="compuerSelect">
+
+            </div>
+             
+          </div>
+
+          </div>
+    </div>
+  </div>
+ </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+<div class="popups">
+  <div class="NameBox">
+      <div>
+        <form id="EnterNamePopup">
+          <h4>Enter Your Name</h4>
+          <input type="text" placeholder="Enter Your Name" id="Fname"/>
+        </form>  
+      </div>
+  </div>
+</div>
+</html>

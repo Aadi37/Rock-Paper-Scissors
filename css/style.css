@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Momo+Trust+Display&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-weight: 400;
+    overflow: hidden;
+  font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    user-select: none;
+}
+:focus {
+    outline: 0px;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0px;
+}
+.mainPage {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 25px 0px;
+    height: 100vh;
+}
+.img-responsive {
+    max-width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+
+/* popup */
+.popups {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+     background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+    padding: 55px;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+}
+form#EnterNamePopup h4 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+
+input#Fname {
+    font-size: 20px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0px;
+    padding: 0px 15px;
+    margin: 20px 0px;
+}
+.PlayerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PlayerScoreCard h4 , .ComouterWrapper h4 {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.MoveChoose {
+    text-align: center;
+}
+
+.MoveChoose h4 {
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.MoveChoose ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+.MoveChoose ul  {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+}
+button.btn-choose {
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+.GameResult {
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+}
+.result {
+    font-size: 25px;
+    color: #fff;
+}
